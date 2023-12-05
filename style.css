@@ -358,3 +358,13 @@ form a{
     height: 3px;
     margin-top: 8px;
 }
+
+#login-head{
+    border-color: #ff523b;
+}
+#regis-head{
+    border-color: transparent;
+}
+.underline{
+    border-bottom: 3px solid transparent;
+}

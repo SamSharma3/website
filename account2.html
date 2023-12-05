@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
          <meta charset="UTF-8">
-         <title>Register</title>   
+         <title>Register | by Prashant Yadav</title>   
          <link rel="stylesheet" href="style.css">
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="./script.js"></script>
     </head>
     <body>
        
@@ -41,17 +42,23 @@
                     <div class="col-2">
                         <div class="form-container">
                             <div class="form-btn">
-                                <span>Login</span>
-                                <span><a href="/account.html">Register</a></span>
-                                <hr id="indicator">
+                                <span onclick="visiblelogin()" class="underline" id="login-head">Login</span>
+                                <span onclick="visibleregister()" class="underline" id="regis-head">Register</span>
                             </div>
                             
                         
                         <form id="login-form">
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
-                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn" id="submit00" onclick="doalert()">Login</button>
                             <a href="">Forget Password</a>
+
+                        </form>
+                        <form id="register-form" style="visibility: hidden;">
+                            <input type="text" placeholder="Username">
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="password" placeholder="Password" id="pass">
+                            <button type="submit" class="btn" id="submit01" onclick="docheck()">SignUp</button>
 
                         </form>
                        
